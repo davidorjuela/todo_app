@@ -34,8 +34,8 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = false
 
   config.action_mailer.perform_caching = false
-
-  # Print deprecation notices to the Rails logger.
+  config.action_mailer.delivery_method = :mailjet
+  # Print deprecation notices to the Rails logger.letter_opener
   config.active_support.deprecation = :log
 
   # Raise an error on page load if there are pending migrations.
